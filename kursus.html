@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Kursus</title>
+</head>
+
+<body>
+    <h1 align="center">LEMBAGA KURSUS KOMPUTER ANDA PASTI BISA</h1>
+    <form action="pendaftaran.php" method="post">
+        <table>
+            <tr>
+                <td>Nama Peserta</td>
+                <td style="padding: 8px;"><input type="text" id="nama" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Pilih Paket Kursus</td>
+                <td style="padding: 8px;"><input type="checkbox" name="web" value="web programming">
+                    <label for="web">Web Programming</label><br>
+                    <input type="checkbox" name="java" value="Java">
+                    <label for="java">Java</label><br>
+                    <input type="checkbox" name="mobile" value=" mobile programming">
+                    <label for="Mobile">Mobile Programming</label><br>
+                    <input type="checkbox" name="phyton" value="phyton">
+                    <label for="Phyton">Phyton</label>
+                    <input type="hidden" name="harga1" value="50000">
+                    <input type="hidden" name="harga2" value="65000">
+                    <input type="hidden" name="harga3" value="75000">
+                    <input type="hidden" name="harga4" value="85000">
+                </td>
+            </tr>
+            <tr>
+                <td>Pilih Waktu Kursus</td>
+                <td style="padding: 8px;">
+                    <select name="waktu" id="waktu">
+                        <option value="pagi/siang">pagi/siang</option>
+                        <option value="sore/malem">sore/malem</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <input type="submit" name="cetak" value="kirim">
+                    <input type="reset" value="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+
+</body>
+
+</html>
